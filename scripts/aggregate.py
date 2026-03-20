@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from __future__ import annotations
+
 import json
 import os
 import re
@@ -128,6 +130,33 @@ def _infer_categories(desc: str) -> list[str]:
     return cats or ["general"]
 
 
+def scrape_community_skills(repo_root: str) -> list[dict]:
+    community_dir = Path(repo_root) / "community"
+    if not community_dir.is_dir():
+        return []
+    entries = []
+    for skill_dir in sorted(community_dir.iterdir()):
+        if not skill_dir.is_dir():
+            continue
+        skill_md = skill_dir / "SKILL.md"
+        if not skill_md.exists():
+            continue
+        fm = parse_frontmatter(skill_md.read_text(encoding="utf-8"))
+        if not fm:
+            continue
+        entries.append({
+            "name": fm["name"],
+            "description": fm.get("description", ""),
+            "version": fm.get("version"),
+            "categories": [c.strip() for c in fm.get("categories", "").split(",") if c.strip()]
+                          or _infer_categories(fm.get("description", "")),
+            "downloadUrl": f"https://raw.githubusercontent.com/mqtik/mate-skills-registry/main/community/{skill_dir.name}/",
+            "source": "mqtik/mate-skills-registry",
+            "author": "Mate Community",
+        })
+    return entries
+
+
 def deduplicate(primary: list[dict], secondary: list[dict]) -> list[dict]:
     seen = set()
     result = []
@@ -165,7 +194,11 @@ def main():
         else:
             print("Warning: Could not clone anthropics/claude-plugins-official", file=sys.stderr)
 
+    community_entries = scrape_community_skills(str(repo_root))
+    print(f"Found {len(community_entries)} community skills")
+
     all_skills = deduplicate(skills_entries, plugins_entries)
+    all_skills = deduplicate(all_skills, community_entries)
     print(f"Total unique skills: {len(all_skills)}")
 
     new_content = json.dumps({"skills": all_skills}, indent=2, ensure_ascii=False)
