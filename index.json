@@ -36,17 +36,6 @@
       "author": "Anthropic"
     },
     {
-      "name": "claude-api",
-      "description": "Build apps with the Claude API or Anthropic SDK. TRIGGER when: code imports `anthropic`/`@anthropic-ai/sdk`/`claude_agent_sdk`, or user asks to use Claude API, Anthropic SDKs, or Agent SDK. DO NOT TRIGGER when: code imports `openai`/other AI SDK, general programming, or ML/data-science tasks.",
-      "version": null,
-      "categories": [
-        "development"
-      ],
-      "downloadUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/claude-api/",
-      "source": "anthropics/skills",
-      "author": "Anthropic"
-    },
-    {
       "name": "doc-coauthoring",
       "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
       "version": null,
@@ -393,6 +382,18 @@
         "writing"
       ],
       "downloadUrl": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/main/plugins/plugin-dev/skills/skill-development/",
+      "source": "anthropics/claude-plugins-official",
+      "author": "Anthropic"
+    },
+    {
+      "name": "session-report",
+      "description": "Generate an explorable HTML report of Claude Code session usage (tokens, cache, subagents, skills, expensive prompts) from ~/.claude/projects transcripts.",
+      "version": null,
+      "categories": [
+        "development",
+        "writing"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/main/plugins/session-report/skills/session-report/",
       "source": "anthropics/claude-plugins-official",
       "author": "Anthropic"
     },
