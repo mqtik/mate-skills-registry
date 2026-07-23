@@ -226,6 +226,18 @@
       "author": "Anthropic"
     },
     {
+      "name": "claude-security",
+      "description": "The Claude Security menu — pick a job: scan the codebase (the whole repository or a scoped part of it), scan changes (this branch's or a pull request's diff, or one commit), or suggest patches (findings turned into targeted patch files, each verified by a panel of agents, that you apply when you choose).",
+      "version": null,
+      "categories": [
+        "development",
+        "design"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/main/plugins/claude-security/skills/claude-security/",
+      "source": "anthropics/claude-plugins-official",
+      "author": "Anthropic"
+    },
+    {
       "name": "cardputer-buddy",
       "description": "Iterate on the Cardputer-Adv MicroPython app bundle (Claude Buddy, Snake, Hello) after the device is already provisioned via m5-onboard. Use when the user wants to add a new app, push a single changed .py without re-flashing, watch device serial logs, or run a one-shot REPL command. Trigger on \"add an app\", \"push to the cardputer\", \"tail the device\", \"run on the device\", or follow-up work after /maker-setup.",
       "version": null,
