@@ -36,6 +36,17 @@
       "author": "Anthropic"
     },
     {
+      "name": "claude-academy-guide",
+      "description": ">",
+      "version": null,
+      "categories": [
+        "general"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/claude-academy-guide/",
+      "source": "anthropics/skills",
+      "author": "Anthropic"
+    },
+    {
       "name": "claude-api",
       "description": "|-",
       "version": null,
@@ -43,6 +54,17 @@
         "general"
       ],
       "downloadUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/claude-api/",
+      "source": "anthropics/skills",
+      "author": "Anthropic"
+    },
+    {
+      "name": "discernment-nudge",
+      "description": ">",
+      "version": null,
+      "categories": [
+        "general"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/discernment-nudge/",
       "source": "anthropics/skills",
       "author": "Anthropic"
     },
