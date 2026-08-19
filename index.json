@@ -1,6 +1,17 @@
 {
   "skills": [
     {
+      "name": "academy-guide",
+      "description": ">",
+      "version": null,
+      "categories": [
+        "general"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/academy-guide/",
+      "source": "anthropics/skills",
+      "author": "Anthropic"
+    },
+    {
       "name": "algorithmic-art",
       "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
       "version": null,
@@ -32,17 +43,6 @@
         "documents"
       ],
       "downloadUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/canvas-design/",
-      "source": "anthropics/skills",
-      "author": "Anthropic"
-    },
-    {
-      "name": "claude-academy-guide",
-      "description": ">",
-      "version": null,
-      "categories": [
-        "general"
-      ],
-      "downloadUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/claude-academy-guide/",
       "source": "anthropics/skills",
       "author": "Anthropic"
     },
