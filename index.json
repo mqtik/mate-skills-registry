@@ -326,6 +326,28 @@
       "author": "Anthropic"
     },
     {
+      "name": "siege",
+      "description": "Work on one hard mathematics problem in rounds: each round a judge writes a few self-contained questions, independent workers answer them, and the judge keeps a ledger of what is proved, refuted and open, until the judge concludes or the rounds run out, and then a proof.md says plainly what is and is not proved. A run takes hours and dozens of worker runs. Usage: /math-proof:siege [NAME=value settings] <the problem, stated in full, or the path of a file holding it>.",
+      "version": null,
+      "categories": [
+        "writing"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/main/plugins/math-proof/skills/siege/",
+      "source": "anthropics/claude-plugins-official",
+      "author": "Anthropic"
+    },
+    {
+      "name": "solo",
+      "description": "Work on one hard mathematics problem in this session yourself, with no sub-agents: reason in stages, record each settled step in a notes file so that nothing written is lost if a response is cut off, and end with a self-contained proof.md. Usage: /math-proof:solo <the problem, stated in full, or the path of a file holding it>.",
+      "version": null,
+      "categories": [
+        "general"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/main/plugins/math-proof/skills/solo/",
+      "source": "anthropics/claude-plugins-official",
+      "author": "Anthropic"
+    },
+    {
       "name": "build-mcp-app",
       "description": "This skill should be used when the user wants to build an \"MCP app\", add \"interactive UI\" or \"widgets\" to an MCP server, \"render components in chat\", build \"MCP UI resources\", make a tool that shows a \"form\", \"picker\", \"dashboard\" or \"confirmation dialog\" inline in the conversation, or mentions \"apps SDK\" in the context of MCP. Use AFTER the build-mcp-server skill has settled the deployment model, or when the user already knows they want UI widgets.",
       "version": "0.1.0",
