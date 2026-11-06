@@ -224,6 +224,84 @@
       "author": "Anthropic"
     },
     {
+      "name": "climb",
+      "description": "Work out where a teammate, the champion, or a team is on the steps of AI adoption, and what to try next. Use when a champion wants to help someone move up a step.",
+      "version": null,
+      "categories": [
+        "general"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/main/plugins/champion-kit/skills/climb/",
+      "source": "anthropics/claude-plugins-official",
+      "author": "Anthropic"
+    },
+    {
+      "name": "faq",
+      "description": "Turn repeat questions into a pinned FAQ. Use when a champion keeps answering the same questions.",
+      "version": null,
+      "categories": [
+        "general"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/main/plugins/champion-kit/skills/faq/",
+      "source": "anthropics/claude-plugins-official",
+      "author": "Anthropic"
+    },
+    {
+      "name": "hackathon",
+      "description": "Plan a hackathon, either from a team's real backlog or as open-ended creative play with Claude Code. Use when a champion wants to run a hack day or a shorter hack session.",
+      "version": null,
+      "categories": [
+        "development"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/main/plugins/champion-kit/skills/hackathon/",
+      "source": "anthropics/claude-plugins-official",
+      "author": "Anthropic"
+    },
+    {
+      "name": "maturity",
+      "description": "Evaluate an organization's AI maturity on the steps of AI adoption and write a polished, shareable HTML report with evidence for each score. Use when a champion wants to know where their org or team stands, or to compare with an earlier report.",
+      "version": null,
+      "categories": [
+        "writing",
+        "testing"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/main/plugins/champion-kit/skills/maturity/",
+      "source": "anthropics/claude-plugins-official",
+      "author": "Anthropic"
+    },
+    {
+      "name": "office-hours",
+      "description": "Set up and run Claude Code office hours, including the calendar event when the champion's own calendar connector allows it. Use when a champion wants a regular time for teammates to bring problems.",
+      "version": null,
+      "categories": [
+        "development"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/main/plugins/champion-kit/skills/office-hours/",
+      "source": "anthropics/claude-plugins-official",
+      "author": "Anthropic"
+    },
+    {
+      "name": "patterns",
+      "description": "Find patterns worth sharing from recent PRs and repo history, both repeats to fix and good practices worth spreading. Use when a champion wants to know what the team should reuse or learn from.",
+      "version": null,
+      "categories": [
+        "general"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/main/plugins/champion-kit/skills/patterns/",
+      "source": "anthropics/claude-plugins-official",
+      "author": "Anthropic"
+    },
+    {
+      "name": "routines",
+      "description": "Set up recurring champion routines as Claude Code scheduled tasks. Use when a champion wants work like a weekly patterns digest, a stale guidance check, or a monthly lead update to happen without kicking it off by hand.",
+      "version": null,
+      "categories": [
+        "development"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/main/plugins/champion-kit/skills/routines/",
+      "source": "anthropics/claude-plugins-official",
+      "author": "Anthropic"
+    },
+    {
       "name": "claude-automation-recommender",
       "description": "Analyze a codebase and recommend Claude Code automations (hooks, subagents, skills, plugins, MCP servers). Use when user asks for automation recommendations, wants to optimize their Claude Code setup, mentions improving Claude Code workflows, asks how to first set up Claude Code for a project, or wants to know what Claude Code features they should use.",
       "version": null,
